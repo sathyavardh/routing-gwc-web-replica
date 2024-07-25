@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.gradient-text {
+    background-image: linear-gradient(rgb(241, 107, 102) 35.94%, rgb(250, 175, 95) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+/* Custom styles */
+
+
+  .home-background {
+        margin-left: 0px;
+        background-image: url('./images/home.jpg'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 88vh; /* Make sure it covers the full viewport height */
+    }
+
+  .hover\:gradient-text:hover {
+        background-image: linear-gradient(rgb(241, 107, 102) 35.94%, rgb(250, 175, 95) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+  }
+
+  .contact-background {
+    background-image: url('https://gwcdata.ai/assets/contactUsBanneer-cSikOaqK.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%;
+    height: 30vh; /* 30% of the viewport height */
+  }
+  
+  .contact-content {
+    background-color:  #6f2b8c; /* Custom purple background color */
+    /* #712b8c; */
+    width: 100%;
+    min-height: 58vh; /* Remaining 70% of the viewport height */
+    padding-top: 2rem; /* Optional: add some padding for content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
